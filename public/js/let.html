@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.js"></script>
+
+	<script type="text/babel">
+		for(let i = 0;i < 10; i++){
+			let div = document.getElementById("div");
+			let button = document.createElement("button");
+			button.onclick = function (){
+				alert("Clicked button #" + i);
+			}
+			div.appendChild(button);
+		}
+	</script>
+</head>
+<body>
+	<div id="div"></div>
+</body>
+</html>
